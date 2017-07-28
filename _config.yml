@@ -2,11 +2,11 @@ title: Zeal
 url: "https://zeal.is"
 baseurl:
 google_analytics_key: UA-103610351-1
-google_maps_javascript_api_key:
-disqus_shortname:
+google_maps_javascript_api_key: AIzaSyB7WL14WhMO4s3APFaIB5vnJlUxCmO864k
+disqus_shortname: zeal-2
 
 # Default description in social shares for the jekyll-seo-tag gem
-description:
+description: "Community for sustainability entrepreneurs and product leaders."
 
 # Author details for the jekyll-seo-tag gem
 author:
@@ -23,7 +23,7 @@ collections:
   staff_members:
     output: false
   clients:
-    output: true
+    output: false
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -38,6 +38,9 @@ gems:
   - "jekyll-seo-tag"
   - "jekyll-paginate"
   - "jekyll-archives"
+  - "jemoji"
+  - "jekyll-redirect-from"
+  - "jekyll-sitemap"
 
 defaults:
   - scope:
@@ -75,3 +78,5 @@ social_icons:
   # - Twitter
   # - YouTube
   # - RSS
+
+sumo_me_site_id: 8535dc73db7e897ed13211076b6f65023ceea1492d91364bd3d75f3f80f27fbd

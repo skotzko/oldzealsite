@@ -5,13 +5,14 @@ subtitle: We'd love to help you expand your impact.
 map:
   latitude: 34.0195
   longitude: 118.4912
+  address: "1541 Ocean Ave, Santa Monica, CA 90401"
   zoom: 13
 ---
 
 <section class="diagonal">
 	<div class="container">
-		<form action="https://formspree.io/info@zeal.is" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="support@example.com" />
+		<form action="https://formspree.io/{{ site.data.company.contact_email_address }}" method="post" class="contact-form">
+			<input type="hidden" name="_to" value="{{ site.data.company.contact_email_address }}" />
 			<input type="text" name="_gotcha" style="display: none;" />
 
 			<div class="halves">
@@ -28,6 +29,9 @@ map:
 
 			<label for="email">Email Address</label>
 			<input type="email" name="email" id="email" placeholder="your best email" required />
+
+			<input type="text" name="_next" value="{{ site.baseurl }}/contact-success" style="display:none" />
+			<input type="text" name="_gotcha" style="display:none" />
 
 			<label for="message">Message</label>
 			<textarea name="message" id="message" placeholder="How can we be helpful?"></textarea>
